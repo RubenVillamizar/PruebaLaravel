@@ -31,7 +31,7 @@ public function __construct(Persona $personas)
         $data = ['error' =>'no existe'];
     }
     return json_encode($data);
-    return "hola";
+    console.log("hola");
 }
 
 }
