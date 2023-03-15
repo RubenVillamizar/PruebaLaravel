@@ -18,7 +18,7 @@ public function __construct(Persona $personas)
     {
         $persona = $this->personas->obtenerPersonas();
         
-        return json_encode($persona);
+        return json_code($persona);
     }
 
     public function show($id)
@@ -30,7 +30,7 @@ public function __construct(Persona $personas)
     else {
         $data = ['error' =>'no existe'];
     }
-    return json_encode($data);
+    return json_code($data);
     console.log("hola");
 }
 
