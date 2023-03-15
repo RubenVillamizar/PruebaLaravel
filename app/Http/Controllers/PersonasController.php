@@ -18,7 +18,7 @@ public function __construct(Persona $personas)
     {
         $persona = $this->personas->obtenerPersonas();
         
-        return $persona;
+        return json_encode($persona);
     }
 
     public function show($id)
