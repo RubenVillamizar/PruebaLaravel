@@ -25,12 +25,12 @@ public function __construct(Persona $personas)
 {
     $persona = $this->personas->personaDetalle($id);
     if ($persona != ""){
-        return json_encode($persona);
+     $data =  $persona;
     }
     else {
         $data = ['error' =>'no existe'];
     }
-    return $persona;
+    return json_encode($data);
 }
 
 }
