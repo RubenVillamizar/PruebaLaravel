@@ -17,5 +17,5 @@ use App\Http\Controllers\PersonasController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/personas', [PersonasController::class, 'index']);
+Route::get('api/personas', [PersonasController::class, 'index']);
 Route::get('api/detallePersona/{id}', [PersonasController::class, 'show']);
