@@ -17,8 +17,7 @@ public function __construct(Persona $personas)
     public function index()
     {
         $persona = $this->personas->obtenerPersonas();
-        
-        return ($persona);
+        return response()->json(['success' => true, 'data' => $persona], 200);
     }
 
     public function show($id)
