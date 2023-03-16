@@ -30,8 +30,7 @@ public function __construct(Persona $personas)
     else {
         $data = ['error' =>'no existe'];
     }
-    return json_code($data);
-    console.log("hola");
+    return response()->json(['success' => true, 'data' => $data], 200);
 }
 
 }
