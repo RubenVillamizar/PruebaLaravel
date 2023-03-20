@@ -15,13 +15,13 @@ class TagController extends Controller
     
         public function index()
         {
-            $etiquetas = $this->etiqueta->obtenerEtiquetas();
+            $etiquetas = $this->tag->obtenerEtiquetas();
             return response()->json($etiqueta, 200);
         }
     
-        public function show($id)
+       /* public function show($id)
         {
-        $etiqueta = $this->etiquetas->personaDetalle($id);
+        $etiqueta = $this->tag->personaDetalle($id);
         if ($etiqueta != ""){
          $data =  $etiqueta;
         }
@@ -30,6 +30,7 @@ class TagController extends Controller
         }
         return response()->json(['success' => true, 'data' => $data], 200);
         }
+        */
     
 
 }
