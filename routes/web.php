@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 Route::get('api/personas', [PersonasController::class, 'index']);
 Route::get('api/detallePersona/{id}', [PersonasController::class, 'show']);
+Route::get('api/tags', [TagController::class, 'index']);
 
