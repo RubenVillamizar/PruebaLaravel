@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Etiqueta extends Model
+class Tag extends Model
 {
-   
     public function obtenerEtiquetas()
     {
         return Etiqueta::all(['id','nombre']); 
