@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Tags extends Controller
+class TagController extends Controller
 {
     protected $etiquetas;
     public function __construct(Etiqueta $Etiqueta)
