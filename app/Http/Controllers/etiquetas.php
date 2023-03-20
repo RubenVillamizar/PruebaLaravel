@@ -8,7 +8,7 @@ use App\Models\Etiqueta;
 class Etiquetas extends Controller
     {
         protected $etiquetas;
-        public function __construct(Etiqueta $tags)
+        public function __construct(Etiqueta $Etiqueta)
         {
             $this->etiquetas = $etiquetas;
         }
