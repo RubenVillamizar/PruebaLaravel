@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tag;
 
 class TagController extends Controller
 {
     protected $etiquetas;
-    public function __construct(Etiqueta $Etiqueta)
+    public function __construct(Etiqueta $Tag)
     {
         $this->etiquetas = $etiquetas;
     }
