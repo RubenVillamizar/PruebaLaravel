@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PersonasController;
+use App\Http\Controllers\etiquetas;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,4 @@ Route::get('/', function () {
 });
 Route::get('api/personas', [PersonasController::class, 'index']);
 Route::get('api/detallePersona/{id}', [PersonasController::class, 'show']);
+Route::get('api/etiquetas', [etiquetas::class, 'index']);
