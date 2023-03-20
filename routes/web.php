@@ -20,4 +20,4 @@ Route::get('/', function () {
 });
 Route::get('api/personas', [PersonasController::class, 'index']);
 Route::get('api/detallePersona/{id}', [PersonasController::class, 'show']);
-Route::get('api/etiquetas', [Etiquetas::class, 'index']);
+Route::get('api/etiquetas', [tags::class, 'index']);
