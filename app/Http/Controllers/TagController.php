@@ -8,14 +8,14 @@ use App\Models\Tag;
 class TagController extends Controller
 {
     protected $etiquetas;
-    public function __construct(Tag $tag)
+    public function __construct(Tag $tags)
     {
-        $this->etiquetas = $etiquetas;
+        $this->tags = $etiquetas;
     }
     
         public function index()
         {
-            $etiquetas = $this->tag->obtenerEtiquetas();
+            $etiquetas = $this->tags->obtenerEtiquetas();
             return response()->json($etiqueta, 200);
         }
     
